@@ -1,5 +1,4 @@
 #include "CMatrice.h"
-#include <iostream>
 
 //Constructeur
 CMatrice::CMatrice(double dblTab[3][3])

@@ -11,5 +11,5 @@ public:
 	CMatrice(double dblTab[3][3]);
 
 	//Fonctions amies
-	friend CVect CVect::Prod(CMatrice);
+	friend CVect Prod(CMatrice, CVect&);
 };

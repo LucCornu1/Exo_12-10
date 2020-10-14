@@ -144,6 +144,7 @@
     <ClCompile Include="CVect.cpp" />
     <ClCompile Include="CVecteur3d.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Prod.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CMatrice.h" />

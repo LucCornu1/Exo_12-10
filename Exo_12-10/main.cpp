@@ -2,6 +2,7 @@
 #include "CVecteur3d.h"
 #include "CVect.h"
 #include "CMatrice.h"
+
 #include <stdio.h>
 #include <iostream>
 
@@ -113,7 +114,7 @@ int main()
 	CVect Vecteur0(1, 1, 1);
 	CVect Vecteur1;
 
-	Vecteur1 = Vecteur0.Prod(Matrice);
+	Vecteur1 = Prod(Matrice, Vecteur0);
 
 	affichage(Vecteur1);
 
