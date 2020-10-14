@@ -1,5 +1,7 @@
 #include "CPoint.h"
 #include "CVecteur3d.h"
+#include "CVect.h"
+#include "CMatrice.h"
 #include <stdio.h>
 #include <iostream>
 
@@ -53,6 +55,25 @@ int main()
 	else {
 		cout << "Le Vecteur 0 et le Vecteur 2 n'ont pas les memes composantes" << endl;
 	}
+
+	cout << endl;
+
+
+	//Exercice 83 :
+	cout << "Exercice 83 :" << endl;
+
+	double dblTab[3][3] = { 1 };
+
+	CMatrice Matrice(dblTab);
+
+	CVect Vecteur0(1, 1, 1);
+	CVect Vecteur1;
+
+	Vecteur1 = Vecteur0.Prod(Matrice);
+
+	affichage(Vecteur1);
+
+
 
 	return 0;
 }

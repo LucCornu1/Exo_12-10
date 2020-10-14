@@ -139,12 +139,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CMatrice.cpp" />
     <ClCompile Include="CPoint.cpp" />
+    <ClCompile Include="CVect.cpp" />
     <ClCompile Include="CVecteur3d.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CMatrice.h" />
     <ClInclude Include="CPoint.h" />
+    <ClInclude Include="CVect.h" />
     <ClInclude Include="CVecteur3d.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
