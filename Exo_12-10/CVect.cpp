@@ -18,7 +18,12 @@ CVect CVect::Prod(CMatrice Matrice)
 //ENTREE : Une matrice
 //SORTIE : Le produit d'un vecteur et d'une matrice, qui est un nouveau vecteur
 {
-	double tabResultat[3] = { 0 };
+	double tabResultat[3];
+
+	for (int nI = 0; nI < 3; nI++)
+	{
+		tabResultat[nI] = 0;
+	}
 
 	double tabVecteur[3];
 	tabVecteur[0] = this->m_dblX;

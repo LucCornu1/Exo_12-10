@@ -7,6 +7,44 @@
 
 using namespace std;
 
+//Déclarations
+void initTableau(double[3][3], double dblX);
+
+void afficheTableau(double[3][3]);
+
+
+//Définitions
+void initTableau(double dblTab[3][3], double dblX)
+//BUT : Initialiser un tableau de 3x3 à une valeur X
+//ENTREE : Le tableau à initialiser et une valeur X pour initialiser celui-ci
+//SORTIE : /
+{
+	for (int nI = 0; nI < 3; nI++)
+	{
+		for (int nJ = 0; nJ < 3; nJ++)
+		{
+			dblTab[nI][nJ] = dblX + nI + nJ;
+		}
+	}
+}
+
+void afficheTableau(double dblTab[3][3])
+//BUT : Afficher un tableau de 3x3
+//ENTREE : Un tableau de 3x3
+//SORTIE : /
+{
+	cout << "Affichage de la matrice :" << endl;
+	for (int nI = 0; nI < 3; nI++)
+	{
+		for (int nJ = 0; nJ < 3; nJ++)
+		{
+			cout << dblTab[nI][nJ] << " ";
+		}
+		cout << endl;
+	}
+}
+
+
 int main()
 {
 	//Exercice 81 :
@@ -60,9 +98,15 @@ int main()
 
 
 	//Exercice 83 :
-	cout << "Exercice 83 :" << endl;
+	cout << "Exercice 83 :" << endl << endl;
 
-	double dblTab[3][3] = { 1 };
+	double dblTab[3][3];
+
+	initTableau(dblTab, 1);
+
+	afficheTableau(dblTab);
+
+	cout << endl;
 
 	CMatrice Matrice(dblTab);
 
